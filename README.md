@@ -17,3 +17,15 @@ Images define what goes into a container. Containers are running instances of Im
 * Images are immutable i.e once they are created, it should not be changed. If there is a change needed, then a new image should be created.
 * Container images are built up from layers
 
+# Image layer
+
+* Docker image s built up from a series of layers
+* Each layer is build using an instruction(modification) in te Dockerfile.
+* Layers are "stacked" on top of ones before
+* Each layer is only the set of differences from the last one.
+* Think of base layer as being an OS image
+* Each layer is R/O except for last one.
+* Last/Top layer is "Container layer"
+* Container layer is thin R/W layer
+* All changes made to running container go in that layer
+

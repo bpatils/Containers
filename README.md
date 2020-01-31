@@ -29,3 +29,4 @@ Images define what goes into a container. Containers are running instances of Im
 * Container layer is thin R/W layer
 * All changes made to running container go in that layer
 
+![](images/Container_RW.png)
